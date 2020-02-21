@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serve:client
 ```
 
 ### Compiles and minifies for production
@@ -15,14 +15,14 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### Run your serve ssr
 ```
-npm run test
+npm run start
 ```
 
-### Lints and fixes files
+### pm2 进程守护
 ```
-npm run lint
+pm2 start ./scripts/start.js
 ```
 
 ### Run your unit tests
