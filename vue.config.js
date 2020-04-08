@@ -92,7 +92,7 @@ const config = {
                 ? 'commonjs2' : undefined
         },
         optimization: {
-            splitChunks: undefined
+            splitChunks: TARGET_NODE ? false : undefined,
         },
         resolve: {
             alias: {
