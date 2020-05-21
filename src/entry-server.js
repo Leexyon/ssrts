@@ -1,7 +1,7 @@
 // 服务器的入口文件 = >返回了一个 promise
 import {
   createApp,
-} from './app';
+} from './main';
 
 export default context => {
   return new Promise((resolve, reject) => {
