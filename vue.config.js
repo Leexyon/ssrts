@@ -25,29 +25,16 @@ const config = {
     // 生产环境 sourceMap
     productionSourceMap: false,
     // baseUrl: process.env.NODE_ENV === 'production' ? './' : '/',
-    // css: {
-    //     // 是否开启支持 foo.module.css 样式
-    //     modules: false,
-    //     // 是否使用 css 分离插件 ExtractTextPlugin，采用独立样式文件载入，不采用 <style> 方式内联至 html 文件中
-    //     extract: true,
-    //     // css预设器配置项
-    //     loaderOptions: {
-    //         css: {},
-    //         postcss: {
-    //             plugins: [
-    //                 px2remExclude({
-    //                     remUnit: 75,
-    //                     exclude: /node_modules|folder_name/i
-    //                 })
-    //             ]
-    //         },
-    //         sass: {
-    //             data: `
-    //         @import "~@/assets/scss/font-size.scss";
-    //         `
-    //         }
-    //     }
-    // },
+    css: {
+        loaderOptions: {
+            scss: {
+                // @/ 是 src/ 的别名
+                // 所以这里假设你有 `src/variables.sass` 这个文件
+                // 注意：在 sass-loader v8 中，这个选项名是 "prependData"
+                prependData: `@import "~@/style/reset.scss";`
+            },
+        }
+    },
     // webpack 配置，键值对象时会合并配置，为方法时会改写配置
 
     // configureWebpack: (configs) => {

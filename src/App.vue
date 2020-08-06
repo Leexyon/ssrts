@@ -12,6 +12,7 @@
         components: {},
     })
     export default class App extends Vue {
+
         public testdata = '';
 
         created() {
@@ -29,5 +30,6 @@
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
+        background: $themeColor;
     }
 </style>
