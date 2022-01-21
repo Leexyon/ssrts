@@ -19,7 +19,7 @@
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "lodash.merge": "^4.6.2",
-    "log4js": "^6.3.0",
+    "log4js": "^6.4.0",
     "postcss-px2rem-exclude": "0.0.6",
     "timers": "^0.1.1",
     "tslib": "^1.11.1",
