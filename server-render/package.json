@@ -14,7 +14,7 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "cross-env": "^7.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-proxy-middleware": "^1.0.1",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
